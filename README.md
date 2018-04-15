@@ -1,11 +1,11 @@
-# Postman JSDoc3 Theme
+# Reconbot's JSDoc3 Theme
 
-A clean, responsive documentation template theme for JSDoc 3, based on [LatoDoc](https://github.com/smeijer/latodoc)
+A clean, responsive documentation template theme for JSDoc 3, based on [postman-jsdoc-theme](https://github.com/postmanlabs/postman-jsdoc-theme)
 
 ## Install
 
 ```bash
-$ npm install --save-dev postman-jsdoc-theme
+$ npm install --save-dev @reconbot/jsdoc-theme
 ```
 
 ## Usage

@@ -65,6 +65,9 @@ In your `.jsdoc.json` file, add a template option.
         "private": true,
         "recurse": true,
         "template": "./node_modules/postman-jsdoc-theme"
+    },
+    "reconbot": {
+        "github":"https://github.com/reconbot/jsdoc-theme"
     }
 }
 ```

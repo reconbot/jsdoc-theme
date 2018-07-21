@@ -18,7 +18,7 @@ var hasOwnProp = Object.prototype.hasOwnProperty;
 
 var data;
 var view;
-
+const config = env.conf.reconbot
 var outdir = path.normalize(env.opts.destination);
 
 function find(spec) {
@@ -211,7 +211,8 @@ function generate(type, title, docs, filename, resolveLinks) {
     var docData = {
         type: type,
         title: title,
-        docs: docs
+        docs: docs,
+        project: config.project
     };
 
     var outpath = path.join(outdir, filename),
@@ -568,7 +569,7 @@ exports.publish = function(taffyData, opts, tutorials) {
     view.tutoriallink = tutoriallink;
     view.htmlsafe = htmlsafe;
     view.outputSourceFiles = outputSourceFiles;
-    view.config = env.conf.reconbot;
+    view.config = config;
 
     // once for all
     view.nav = buildNav(members);
